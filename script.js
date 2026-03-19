@@ -9,7 +9,6 @@
         alert("Bonsoir et bienvenue sur mon portfolio ") ;
     }
   
-    
 const contactForm = document.getElementById("contact-form");
 
 contactForm.addEventListener("submit", function(e) {
@@ -24,13 +23,7 @@ contactForm.addEventListener("submit", function(e) {
         return;
     }
     
-    const emails = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (emails.test(email)) {
-        alert("Veuillez entrer une adresse email valide.");
-        return;
-    }
-    
-    alert("Merci pour votre message ! Je vous recontacterai bientôt.");
+ alert("Merci pour votre message ! Je vous recontacterai bientôt.");
     contactForm.reset();
 });
 
