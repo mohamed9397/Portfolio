@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio - Développeur Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">MonPortfolio</div>
+            <ul class="nav-menu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos de moi</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-sombre" class="theme-button">🌓</button>
+        </nav>
+        <div class="menus" id="menus">☰</div>
+    </header>
+
+    
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1>Salut, je m'appelle <span class="highlight">Mohamed TCHOMOGO</span></h1>
+            <p>Développeur Web Passionné</p>
+            <a href="#contact" class="button">Me Contacter</a>
+        </div>
+    </section>
+
+    
+    <section id="apropos" class="section">
+        <h2 class="section-titre">À propos de moi</h2>
+        <div class="content">
+            <div class="text">
+                <p>Je suis un développeur web passionné par la création de sites modernes et responsives. 
+                J'aime apprendre de nouvelles technologies et résoudre des problèmes complexes.</p>
+                <p>Actuellement en formation à l'ENSPD, je développe mes compétences en HTML, CSS et JavaScript.
+                <p> Étudiant en première année de Planification et Suivi-Évaluation à l’École Nationale de Statistique, 
+                    de Planification et de Démographie de Parakou, je possède des bases solides en statistiques et 
+                    en analyse de données. Rigoureux, analytique et doté d’une forte capacité d’apprentissage, 
+                    je m’intéresse particulièrement à l’intelligence artificielle et à la science des données.</p>
+                
+                <a href="CV.pdf.pdf" download class="button charger" target="_blank">Télécharger mon CV</a>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="competences" class="section">
+        <h2 class="section-titre">Mes Compétences</h2>
+        <div class="contenu">            
+            <div class="category">
+                <h3>Compétences Techniques</h3>
+                <ul class="list">
+                   <li>HTML & CSS</li>
+                   <li>JavaScript</li>
+                   <li>Git & GitHub</li>
+                   <li>Basa en Statistique Descriptive</li>
+                   <li>Maîtrise des Outils de Bureautique</li>
+                </ul>
+            </div>
+            <div class="category">
+                <h3>Compétences Transversales</h3>
+                <ul class="list">
+                    <li>Résolution de problèmes</li>
+                    <li>Travail d'équipe</li>
+                    <li>Communication</li>
+                    <li>Autonomie</li>
+                    <li>Créativité</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="projets" class="section">
+        <h2 class="section-titre">Mes Projets</h2>
+        <div class="projets">
+            <div class="projet">
+                <h3>Projet 1 -  Mise en forme avec les feuilles de style</h3>
+                <p>Mise en forme de Page d'Evaluation, de Conteneurs et Usage de Sélecteurs CSS Avancés</p>
+            </div>
+            <div class="projet">
+                <h3>Projet 2 - Ecrire des scripts Javascript et les intégrer à HTML</h3>
+                <p>Ecriture de scripts vérifiant l'âge, affichant la séquence de Fibonacci et un Motif Triangulaire</p>
+            </div>
+            <div class="projet">
+                <h3>Projet 3 - Formulaire Interactif </h3>
+                <p>Manipulation de String, Nombres, Dates, et Création de Calculateur de Prêt Hypothécaire</p>
+            </div>
+        </div>
+    </section>
+
+  
+    <section id="contact" class="section">
+        <h2 class="section-titre">Contact</h2>
+        <div class="contact-contenu">
+            <form id="contact-form" class="contact-form" 
+            action="mailot: mohamedtchomogo2007@gmail.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="nom">Nom et Prénom</label>
+                    <input type="text" id="nom" name="nom" placeholder="Mohamed TRAORE" required>                
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="votre@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Ecrivez ici" required></textarea>
+                </div>
+                <button type="submit" class="button">Envoyer</button>
+            </form>
+             <div class="lienssocio">
+                  <a href="mailto:mohamedtchomogo2007@gmail.com">📧 E-mail</a>
+                  <a href="https://www.facebook.com/profile.php?id=61579014932747" target="_blank">🔵 Facebook</a>
+                  <a href="https://wa.me/+2290168981719" target="_blank">💬 WhatsApp</a>
+                  <p>📞 <a href="tel:+2290161919397">+229 0161 919 397</a></p>
+                 </div>
+        </div>
+    
+    </section>
+
+    
+    <footer class="pied">
+        <p>&copy; 2026 - Tous droits réservés</p>
+    </footer>
+
+    <button id="back-to-top" class="retour">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
